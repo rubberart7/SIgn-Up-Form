@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* removes default paddings and margins */
+}
+/* vw and vh represent a percentage of the viewport's width and height */
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+.logo-name {
+    font-family: 'Norse-Bold', sans-serif;
+    color: white;
+    font-size: 6rem;
+}
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* so main takes up the entire screen with both height and width */
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 60vh;
+    background-image: url(./images/bgimage.jpg);
+    width: 35vw;
+    background-repeat: no-repeat;
+    /* prevents tiling */
+    background-size: cover;
+    /* makes the background cover the entire image container and may be cropped a little to fit */
+}
+
+.full-logo {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
+    
+
+}
+
+.full-logo img {
+    width: 15%;
+    height: auto;
+}
+
+.photo-cred {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-weight: bolder;
+}
