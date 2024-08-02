@@ -97,6 +97,8 @@ button {
     height: 5%;
     padding: 2vh 5vw;
     border-radius: 10px;
+    /* the button is a flex container section causing it to stertch, use fixed
+    px amounts instead of percentages for better control */
 }
 
 button:hover {
