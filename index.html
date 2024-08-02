@@ -42,7 +42,13 @@
               </div>
               <div class="form-div">
                 <label for="password">Password</label>
-                <input type="text" id="password" name="password" />
+                <input
+                  type="text"
+                  id="password"
+                  name="password"
+                  required
+                  minlength="8"
+                />
               </div>
             </div>
 
@@ -61,6 +67,8 @@
                   type="text"
                   id="confirm-password"
                   name="confirmPassword"
+                  required
+                  minlength="8"
                 />
               </div>
             </div>
@@ -68,6 +76,10 @@
         </div>
         <div class="create-account-section">
           <button type="submit">Create Account</button>
+          <div class="login-request">
+            <p>Already have an account?</p>
+            <a href="">Login</a>
+          </div>
         </div>
       </div>
     </div>

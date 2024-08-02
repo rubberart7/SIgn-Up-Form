@@ -36,6 +36,7 @@
     /* makes the background cover the entire image container and may be cropped a little to fit */
 }
 
+
 .full-logo {
     display: flex;
     justify-content: center;
@@ -75,18 +76,21 @@
     gap: 5vh;
     background-color: white;
     padding-left: 5%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 
 }
 
 
 button {
     display: flex;
+    justify-content: center;
     background-color: #596D48;
     border: 1px solid #596D48;
     color: white;
     font-weight: bolder;
+    width: 20%;
+    height: 5%;
     padding: 2vh 3vw;
     border-radius: 10px;
 }
@@ -96,9 +100,13 @@ button:hover {
 
 .create-account-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
+    flex-direction: column;
+    gap: 2vw;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 4.35%;
+    background-color: rgb(248, 248, 248);
+    /* background-color: red; */
 }
 
 .form-main-div {
@@ -133,4 +141,25 @@ They start on a new line and have space above and below them. */
     outline: none;
     border-color: blue;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:invalid {
+    border: 2px solid red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+input:focus:invalid {
+    border-color: red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.login-request {
+    display: flex;
+    gap: 1vw;
+}
+
+.login-request a {
+    color: #596D48;
+    font-weight: bolder;
+    text-decoration: none;
 }
